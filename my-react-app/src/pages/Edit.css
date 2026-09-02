@@ -1,13 +1,10 @@
-
 .edit-page {
   min-height: 100vh;
   width: 100%;
   padding: 24px;
   box-sizing: border-box;
-
   background-color: #f7f8fc;
   color: #243554;
-
   transition: all 0.3s ease;
 }
 
@@ -33,13 +30,9 @@
 .table-box {
   width: 100%;
   background-color: white;
-
   border-radius: 12px;
-
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-
   overflow: hidden;
-
   transition: all 0.3s ease;
 }
 
@@ -50,17 +43,12 @@
 
 .edit-toolbar {
   min-height: 65px;
-
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
   gap: 8px;
-
   padding: 0 16px;
-
   border-bottom: 1px solid #e0e0e0;
-
   background-color: white;
 }
 
@@ -72,14 +60,10 @@
 .search-box {
   display: flex;
   align-items: center;
-
   height: 40px;
-
   padding: 0 8px;
-
   border: 1px solid #ddd;
   border-radius: 8px;
-
   background-color: white;
 }
 
@@ -156,27 +140,22 @@
 
 .movie-data-grid {
   border: none !important;
-
   color: #243554;
-
   background-color: white;
 }
 
 .movie-data-grid.dark {
   color: white;
-
   background-color: #1e1e1e;
 }
 
 .movie-data-grid .MuiDataGrid-columnHeaders {
   background-color: #fafafa;
-
   color: #243554;
 }
 
 .movie-data-grid.dark .MuiDataGrid-columnHeaders {
   background-color: #292929;
-
   color: white;
 }
 
@@ -186,13 +165,11 @@
 
 .movie-data-grid .MuiDataGrid-cell {
   color: #333;
-
   border-color: #e5e7eb;
 }
 
 .movie-data-grid.dark .MuiDataGrid-cell {
   color: #eeeeee;
-
   border-color: #333;
 }
 
@@ -206,17 +183,13 @@
 
 .movie-data-grid .MuiDataGrid-footerContainer {
   background-color: white;
-
   color: #333;
-
   border-color: #e0e0e0;
 }
 
 .movie-data-grid.dark .MuiDataGrid-footerContainer {
   background-color: #1e1e1e;
-
   color: white;
-
   border-color: #333;
 }
 
@@ -250,11 +223,8 @@
 
 .edit-button {
   background-color: palegoldenrod !important;
-
   color: #243554 !important;
-
   font-weight: bold !important;
-
   border-radius: 8px !important;
 }
 
@@ -264,29 +234,23 @@
 
 .edit-dialog {
   background-color: white !important;
-
   color: #222 !important;
-
   border-radius: 12px !important;
 }
 
 .edit-dialog.dark {
   background-color: #1e1e1e !important;
-
   color: white !important;
 }
 
 .dialog-title {
   font-weight: bold !important;
-
   color: #243554;
-
   background-color: palegoldenrod;
 }
 
 .edit-dialog.dark .dialog-title {
   color: white;
-
   background-color: #292929;
 }
 
@@ -301,11 +265,8 @@
 
 .form-grid {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
   gap: 16px;
-
   margin-top: 8px;
 }
 
@@ -321,21 +282,17 @@
   color: #243554;
 }
 
-.edit-dialog.dark
-  .edit-text-field
-  .MuiInputLabel-root.Mui-focused {
+.edit-dialog.dark .edit-text-field .MuiInputLabel-root.Mui-focused {
   color: palegoldenrod;
 }
 
 .edit-text-field .MuiOutlinedInput-root {
   color: #222;
-
   background-color: white;
 }
 
 .edit-dialog.dark .edit-text-field .MuiOutlinedInput-root {
   color: white;
-
   background-color: #292929;
 }
 
@@ -343,36 +300,23 @@
   border-color: #cccccc;
 }
 
-.edit-dialog.dark
-  .edit-text-field
-  .MuiOutlinedInput-root
-  fieldset {
+.edit-dialog.dark .edit-text-field .MuiOutlinedInput-root fieldset {
   border-color: #555;
 }
 
-.edit-text-field
-  .MuiOutlinedInput-root:hover
-  fieldset {
+.edit-text-field .MuiOutlinedInput-root:hover fieldset {
   border-color: #243554;
 }
 
-.edit-dialog.dark
-  .edit-text-field
-  .MuiOutlinedInput-root:hover
-  fieldset {
+.edit-dialog.dark .edit-text-field .MuiOutlinedInput-root:hover fieldset {
   border-color: #888;
 }
 
-.edit-text-field
-  .MuiOutlinedInput-root.Mui-focused
-  fieldset {
+.edit-text-field .MuiOutlinedInput-root.Mui-focused fieldset {
   border-color: #243554;
 }
 
-.edit-dialog.dark
-  .edit-text-field
-  .MuiOutlinedInput-root.Mui-focused
-  fieldset {
+.edit-dialog.dark .edit-text-field .MuiOutlinedInput-root.Mui-focused fieldset {
   border-color: palegoldenrod;
 }
 
@@ -382,7 +326,6 @@
 
 .dialog-actions {
   padding: 0 24px 16px !important;
-
   background-color: white;
 }
 
@@ -392,9 +335,7 @@
 
 .cancel-button {
   color: #243554 !important;
-
   font-weight: bold !important;
-
   text-transform: none !important;
 }
 
@@ -404,11 +345,8 @@
 
 .save-button {
   background-color: palegoldenrod !important;
-
   color: #243554 !important;
-
   font-weight: bold !important;
-
   text-transform: none !important;
 }
 
@@ -428,7 +366,6 @@
   .edit-toolbar {
     justify-content: center;
     flex-wrap: wrap;
-
     padding: 12px;
   }
 
@@ -444,8 +381,6 @@
     grid-column: 1;
   }
 }
-
-
 
 @media print {
   .edit-toolbar {
