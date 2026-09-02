@@ -1,0 +1,82 @@
+.sort-page {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.sort-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #243554;
+}
+
+.sort-control {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.movie-sort-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.movie-sort-card:hover {
+  border-color: palegoldenrod;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.movie-sort-title {
+  font-weight: bold;
+  color: #243554;
+}
+
+.movie-sort-year {
+  color: #666;
+  margin-top: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .sort-page {
+    background-color: #121212;
+  }
+
+  .sort-title {
+    color: palegoldenrod;
+  }
+
+  .movie-sort-card {
+    background-color: #1e1e1e;
+    border-color: #555;
+  }
+
+  .movie-sort-card:hover {
+    border-color: palegoldenrod;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+  }
+
+  .movie-sort-title {
+    color: palegoldenrod;
+  }
+
+  .movie-sort-year {
+    color: #ccc;
+  }
+}
+
+@media (max-width: 600px) {
+  .sort-page {
+    padding: 15px;
+  }
+
+  .sort-title {
+    font-size: 28px;
+  }
+
+  .sort-control {
+    width: 100%;
+  }
+}

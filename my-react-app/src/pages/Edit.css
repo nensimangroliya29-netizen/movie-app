@@ -1,0 +1,462 @@
+
+.edit-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+
+  background-color: #f7f8fc;
+  color: #243554;
+
+  transition: all 0.3s ease;
+}
+
+.edit-page.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.edit-main {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.edit-title {
+  color: #243554;
+  margin-bottom: 24px !important;
+}
+
+.edit-page.dark .edit-title {
+  color: white;
+}
+
+.table-box {
+  width: 100%;
+  background-color: white;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+.edit-page.dark .table-box {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.edit-toolbar {
+  min-height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 8px;
+
+  padding: 0 16px;
+
+  border-bottom: 1px solid #e0e0e0;
+
+  background-color: white;
+}
+
+.edit-page.dark .edit-toolbar {
+  background-color: #1e1e1e;
+  border-bottom-color: #333;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+
+  height: 40px;
+
+  padding: 0 8px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  background-color: white;
+}
+
+.search-box:focus-within {
+  border-color: #243554;
+}
+
+.edit-page.dark .search-box {
+  background-color: #292929;
+  border-color: #555;
+}
+
+.edit-page.dark .search-box:focus-within {
+  border-color: palegoldenrod;
+}
+
+.search-icon {
+  color: #777;
+}
+
+.edit-page.dark .search-icon {
+  color: #bbbbbb;
+}
+
+.search-input {
+  margin-left: 8px;
+  width: 200px;
+  color: #222 !important;
+}
+
+.edit-page.dark .search-input {
+  color: white !important;
+}
+
+.search-input input::placeholder {
+  color: #777;
+  opacity: 1;
+}
+
+.edit-page.dark .search-input input::placeholder {
+  color: #aaaaaa;
+}
+
+.download-button {
+  color: #243554 !important;
+}
+
+.download-button:hover {
+  background-color: #f1f1f1 !important;
+}
+
+.edit-page.dark .download-button {
+  color: white !important;
+}
+
+.edit-page.dark .download-button:hover {
+  background-color: #333 !important;
+}
+
+.export-menu {
+  background-color: white !important;
+  color: #222 !important;
+}
+
+.export-menu.dark {
+  background-color: #242424 !important;
+  color: white !important;
+}
+
+.data-grid-box {
+  height: 600px;
+  width: 100%;
+}
+
+.movie-data-grid {
+  border: none !important;
+
+  color: #243554;
+
+  background-color: white;
+}
+
+.movie-data-grid.dark {
+  color: white;
+
+  background-color: #1e1e1e;
+}
+
+.movie-data-grid .MuiDataGrid-columnHeaders {
+  background-color: #fafafa;
+
+  color: #243554;
+}
+
+.movie-data-grid.dark .MuiDataGrid-columnHeaders {
+  background-color: #292929;
+
+  color: white;
+}
+
+.movie-data-grid .MuiDataGrid-columnHeaderTitle {
+  font-weight: bold;
+}
+
+.movie-data-grid .MuiDataGrid-cell {
+  color: #333;
+
+  border-color: #e5e7eb;
+}
+
+.movie-data-grid.dark .MuiDataGrid-cell {
+  color: #eeeeee;
+
+  border-color: #333;
+}
+
+.movie-data-grid .MuiDataGrid-row:hover {
+  background-color: #f8f9fc;
+}
+
+.movie-data-grid.dark .MuiDataGrid-row:hover {
+  background-color: #292929;
+}
+
+.movie-data-grid .MuiDataGrid-footerContainer {
+  background-color: white;
+
+  color: #333;
+
+  border-color: #e0e0e0;
+}
+
+.movie-data-grid.dark .MuiDataGrid-footerContainer {
+  background-color: #1e1e1e;
+
+  color: white;
+
+  border-color: #333;
+}
+
+.movie-data-grid .MuiTablePagination-root {
+  color: #333;
+}
+
+.movie-data-grid.dark .MuiTablePagination-root {
+  color: white;
+}
+
+.movie-data-grid .MuiDataGrid-sortIcon {
+  color: #333;
+}
+
+.movie-data-grid.dark .MuiDataGrid-sortIcon {
+  color: white;
+}
+
+.movie-data-grid .MuiCheckbox-root {
+  color: #666;
+}
+
+.movie-data-grid.dark .MuiCheckbox-root {
+  color: #bbbbbb;
+}
+
+.movie-data-grid .MuiCheckbox-root.Mui-checked {
+  color: palegoldenrod;
+}
+
+.edit-button {
+  background-color: palegoldenrod !important;
+
+  color: #243554 !important;
+
+  font-weight: bold !important;
+
+  border-radius: 8px !important;
+}
+
+.edit-button:hover {
+  background-color: #e6d98a !important;
+}
+
+.edit-dialog {
+  background-color: white !important;
+
+  color: #222 !important;
+
+  border-radius: 12px !important;
+}
+
+.edit-dialog.dark {
+  background-color: #1e1e1e !important;
+
+  color: white !important;
+}
+
+.dialog-title {
+  font-weight: bold !important;
+
+  color: #243554;
+
+  background-color: palegoldenrod;
+}
+
+.edit-dialog.dark .dialog-title {
+  color: white;
+
+  background-color: #292929;
+}
+
+.dialog-content {
+  background-color: white;
+  padding-top: 24px !important;
+}
+
+.edit-dialog.dark .dialog-content {
+  background-color: #1e1e1e;
+}
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 16px;
+
+  margin-top: 8px;
+}
+
+.edit-text-field .MuiInputLabel-root {
+  color: #666;
+}
+
+.edit-dialog.dark .edit-text-field .MuiInputLabel-root {
+  color: #bbbbbb;
+}
+
+.edit-text-field .MuiInputLabel-root.Mui-focused {
+  color: #243554;
+}
+
+.edit-dialog.dark
+  .edit-text-field
+  .MuiInputLabel-root.Mui-focused {
+  color: palegoldenrod;
+}
+
+.edit-text-field .MuiOutlinedInput-root {
+  color: #222;
+
+  background-color: white;
+}
+
+.edit-dialog.dark .edit-text-field .MuiOutlinedInput-root {
+  color: white;
+
+  background-color: #292929;
+}
+
+.edit-text-field .MuiOutlinedInput-root fieldset {
+  border-color: #cccccc;
+}
+
+.edit-dialog.dark
+  .edit-text-field
+  .MuiOutlinedInput-root
+  fieldset {
+  border-color: #555;
+}
+
+.edit-text-field
+  .MuiOutlinedInput-root:hover
+  fieldset {
+  border-color: #243554;
+}
+
+.edit-dialog.dark
+  .edit-text-field
+  .MuiOutlinedInput-root:hover
+  fieldset {
+  border-color: #888;
+}
+
+.edit-text-field
+  .MuiOutlinedInput-root.Mui-focused
+  fieldset {
+  border-color: #243554;
+}
+
+.edit-dialog.dark
+  .edit-text-field
+  .MuiOutlinedInput-root.Mui-focused
+  fieldset {
+  border-color: palegoldenrod;
+}
+
+.description-field {
+  grid-column: 1 / -1;
+}
+
+.dialog-actions {
+  padding: 0 24px 16px !important;
+
+  background-color: white;
+}
+
+.edit-dialog.dark .dialog-actions {
+  background-color: #1e1e1e;
+}
+
+.cancel-button {
+  color: #243554 !important;
+
+  font-weight: bold !important;
+
+  text-transform: none !important;
+}
+
+.edit-dialog.dark .cancel-button {
+  color: white !important;
+}
+
+.save-button {
+  background-color: palegoldenrod !important;
+
+  color: #243554 !important;
+
+  font-weight: bold !important;
+
+  text-transform: none !important;
+}
+
+.save-button:hover {
+  background-color: #e6d98a !important;
+}
+
+@media (max-width: 700px) {
+  .edit-page {
+    padding: 16px 10px;
+  }
+
+  .edit-title {
+    font-size: 28px !important;
+  }
+
+  .edit-toolbar {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 12px;
+  }
+
+  .search-input {
+    width: 150px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .description-field {
+    grid-column: 1;
+  }
+}
+
+
+
+@media print {
+  .edit-toolbar {
+    display: none;
+  }
+
+  .edit-title {
+    color: black !important;
+  }
+
+  .edit-page {
+    background-color: white !important;
+  }
+}

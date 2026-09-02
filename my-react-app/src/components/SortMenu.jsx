@@ -9,9 +9,11 @@ import {
   Typography,
 } from "@mui/material";
 
+import "./SortMenu.css";
+
 function Sort() {
   const [sort, setSort] = useState("");
-  
+
   let sortedMovies = [...movies];
 
   if (sort === "az") {
@@ -22,50 +24,33 @@ function Sort() {
     sortedMovies.sort((a, b) => b.title.localeCompare(a.title));
   }
 
-  if (sort === "low") {
-    sortedMovies.sort((a, b) => a.year - b.year);
-  }
-
-  if (sort === "high") {
-    sortedMovies.sort((a, b) => b.year - a.year);
-  }
 
   return (
-    <Box style={{padding:'20px'}}>
-      <Typography variant="h4">
+    <Box className="sort-page">
+      <Typography variant="h4" className="sort-title">
         Sort Movies
       </Typography>
 
-      <FormControl  style={{ width: 250,padding:'12px' }}>
+      <FormControl className="sort-control">
         <InputLabel>Sort By</InputLabel>
 
         <Select
           value={sort}
           label="Sort By"
-          onChange={(e) => setSort(e.target.value)
-
-          }
+          onChange={(e) => setSort(e.target.value)}
         >
           <MenuItem value="az">A → Z</MenuItem>
           <MenuItem value="za">Z → A</MenuItem>
-          <MenuItem value="low">Year Low → High</MenuItem>
-          <MenuItem value="high">Year High → Low</MenuItem>
         </Select>
       </FormControl>
 
       {sortedMovies.map((movie) => (
-        <Box
-          key={movie.id}
-          style={{
-            border: "1px solid #ddd",
-            padding:'10px'
-          }}
-        >
-          <Typography variant="h6">
+        <Box key={movie.id} className="movie-sort-card">
+          <Typography variant="h6" className="movie-sort-title">
             {movie.title}
           </Typography>
 
-          <Typography>
+          <Typography className="movie-sort-year">
             Year: {movie.year}
           </Typography>
         </Box>

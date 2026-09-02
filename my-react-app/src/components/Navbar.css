@@ -1,0 +1,104 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: palegoldenrod;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  flex-grow: 1;
+  color: #243554;
+  font-size: 26px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px;
+}
+
+.navbar-search {
+  width: 210px;
+  margin-left: 8px !important;
+}
+
+.navbar-search .MuiOutlinedInput-root {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.navbar-search .MuiOutlinedInput-root fieldset {
+  border-color: #243554;
+}
+
+.navbar-search .MuiOutlinedInput-root:hover fieldset {
+  border-color: #243554;
+}
+
+.navbar-search .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #243554;
+  border-width: 2px;
+}
+
+.navbar-search .MuiInputLabel-root {
+  color: #243554;
+  font-weight: bold;
+}
+
+.navbar-search .MuiInputLabel-root.Mui-focused {
+  color: #243554;
+}
+
+.navbar-button {
+  color: #243554 !important;
+  font-weight: bold !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+}
+
+.navbar-button:hover {
+  background-color: #243554 !important;
+  color: white !important;
+}
+
+.theme-button {
+  font-size: 18px !important;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+
+  .navbar-logo {
+    width: 100%;
+    flex-grow: 0;
+    text-align: center;
+    margin-bottom: 5px !important;
+  }
+
+  .navbar-search {
+    width: 180px;
+  }
+
+  .navbar-button {
+    padding: 7px 10px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    gap: 5px;
+  }
+
+  .navbar-search {
+    width: 150px;
+  }
+
+  .navbar-button {
+    padding: 6px 8px !important;
+    font-size: 13px !important;
+  }
+}

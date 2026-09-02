@@ -5,37 +5,60 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 
 function MovieCard({ movie }) {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      <Card>
+      <Card
+        sx={{
+          width: "100%",
+          height: 560,
+          borderRadius: 2,
+          overflow: "hidden",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
         <CardMedia
           component="img"
-          height="350"
           image={movie.image}
           alt={movie.title}
+          sx={{
+            height: 300,
+            objectFit: "contain",
+          }}
         />
 
-        <CardContent>
-          <Typography>{movie.title}</Typography>
-
-          <Typography>
-            Year: {movie.year}
+        <CardContent
+          sx={{
+            flexGrow: 1,
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Typography variant="h6" fontWeight="bold">
+            {movie.title}
           </Typography>
 
-          <Typography>
-            Genre: {movie.genre}
+          <Typography fontWeight="bold">
+            • {movie.year}
+          </Typography>
+
+          <Typography sx={{ mt: 1 }}>
+            {movie.description}
           </Typography>
 
           <Button
             onClick={() => setOpen(true)}
-            style={{
-              marginTop: "10px",
-              backgroundColor: "#1976D2",
-              color: "white",
+            sx={{
+              mt: "auto",
+              backgroundColor: "palegoldenrod",
+              color: "#243554",
+              fontWeight: "bold",
             }}
           >
             View Details
@@ -48,74 +71,81 @@ function MovieCard({ movie }) {
         onClose={() => setOpen(false)}
       >
         <Card
-          style={{
-            width: "500px",
-            margin: "50px auto",
-            padding: "20px",
+          sx={{
+            width: 550,
+            maxWidth: "90%",
+            maxHeight: "90vh",
+            overflowY: "auto",
+            margin: "40px auto",
+            padding: 3,
+            borderRadius: 2,
+            position: "relative",
           }}
         >
-          <Typography>
+          <IconButton
+            onClick={() => setOpen(false)}
+            sx={{
+              position: "absolute",
+              right: 10,
+              top: 10,
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+
+          <Typography
+            variant="h5"
+            fontWeight="bold"
+            sx={{ mb: 3 }}
+          >
             {movie.title}
           </Typography>
 
           <CardMedia
             component="img"
             image={movie.image}
-            style={{
-              width: "200px",
-              height: "280px",
+            alt={movie.title}
+            sx={{
+              width: 220,
+              height: 300,
               objectFit: "cover",
-              border: "2px solid #243554",
-              borderRadius: "8px",
+              margin: "0 auto 25px",
+              borderRadius: 2,
             }}
           />
 
-          <Typography>
-            Description: {movie.description}
+          <Typography sx={{ mb: 2 }}>
+            <strong>Description:</strong> {movie.description}
           </Typography>
 
-          <Typography>
-            Duration: {movie.duration}
+          <Typography sx={{ mb: 1 }}>
+            <strong>Duration:</strong> {movie.duration}
           </Typography>
 
-          <Typography>
-            Release Date: {movie.releaseDate}
+          <Typography sx={{ mb: 1 }}>
+            <strong>Release Date:</strong> {movie.releaseDate}
           </Typography>
 
-          <Typography>
-            Cast: {movie.cast}
+          <Typography sx={{ mb: 1 }}>
+            <strong>Cast:</strong> {movie.cast}
           </Typography>
 
-          <Typography>
-            Director: {movie.director}
+          <Typography sx={{ mb: 1 }}>
+            <strong>Director:</strong> {movie.director}
           </Typography>
 
-          <Typography>
-            Producer: {movie.producer}
+          <Typography sx={{ mb: 3 }}>
+            <strong>Producer:</strong> {movie.producer}
           </Typography>
 
           <Button
+            variant="contained"
+            color="error"
             href={movie.trailer}
             target="_blank"
-            style={{
-              marginTop: "10px",
-              backgroundColor: "green",
-              color: "white",
-            }}
+            rel="noopener noreferrer"
           >
-            Trailer
-          </Button>
-
-          <Button
-            onClick={() => setOpen(false)}
-            style={{
-              marginTop: "10px",
-              marginLeft: "10px",
-              backgroundColor: "red",
-              color: "white",
-            }}
-          >
-            Close
+            ▶ Trailer
           </Button>
         </Card>
       </Modal>
@@ -124,3 +154,4 @@ function MovieCard({ movie }) {
 }
 
 export default MovieCard;
+
